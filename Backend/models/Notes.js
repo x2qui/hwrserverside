@@ -22,7 +22,7 @@ const NoteSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    // Add more fields if needed, e.g., userId to associate the note with a specific user
+    // This is a MVP, Add more fields if needed, e.g., userId to associate the note with a specific user
 });
 
 // Update the 'updatedAt' field on document save
@@ -31,7 +31,7 @@ NoteSchema.pre('save', function(next) {
     next();
 });
 
-// Create and export the model
+
 const Note = mongoose.model('Note', NoteSchema);
 
 module.exports = Note;
