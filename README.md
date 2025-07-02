@@ -56,7 +56,7 @@ The model architecture is based on a Convolutional Neural Network (CNN) and was 
 ---
 
 ## ▶️ Getting Started
-
+Create your env file and link the backend to your DB
 ### 🔧 Prerequisites
 
 - Python 3.7+
@@ -70,6 +70,6 @@ cd hwrapp
 pip install -r requirements.txt
 python app.py
 
-Then go to your browser AT PORT 5000
+Go to your browser AT PORT 5000 (local host)
 
 
